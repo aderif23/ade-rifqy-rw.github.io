@@ -568,7 +568,7 @@ footer i {
     font-size: 60%;
   }
   .hero .nama {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
   .simply-countdown > .simply-section {
     padding: 35px;
