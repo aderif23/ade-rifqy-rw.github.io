@@ -9,7 +9,7 @@ body {
   padding-right: 0.1rem !important;
 }
 /* halaman hero */
-.hero .nama,
+.hero h1,
 .hero p,
 .hero h4 {
   text-shadow: var(--shadow);
@@ -36,9 +36,9 @@ body {
 .hero h4 {
   font-size: 1.8rem;
 }
-.hero .nama {
+.hero h1 {
   font-family: "Courgette", cursive;
-  font-size: 7.5rem;
+  font-size: 7.3rem;
   margin-top: 10px;
 }
 .hero p {
@@ -567,8 +567,8 @@ footer i {
   html {
     font-size: 60%;
   }
-  .hero .nama {
-    font-size: 1rem !important;
+  .hero h1 {
+    font-size: 1rem;
   }
   .simply-countdown > .simply-section {
     padding: 35px;
