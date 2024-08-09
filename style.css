@@ -9,7 +9,7 @@ body {
   padding-right: 0.1rem !important;
 }
 /* halaman hero */
-.hero h1,
+.hero .nama,
 .hero p,
 .hero h4 {
   text-shadow: var(--shadow);
@@ -36,7 +36,7 @@ body {
 .hero h4 {
   font-size: 1.8rem;
 }
-.hero h1 {
+.hero .nama {
   font-family: "Courgette", cursive;
   font-size: 7.5rem;
   margin-top: 10px;
@@ -153,6 +153,7 @@ body {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   left: 50%;
   transform: translateX(-50%) translateY(65px);
+  z-index: 1;
 }
 .home .heart i {
   margin: auto;
@@ -405,6 +406,21 @@ body {
   background-color: var(--pink);
   color: white;
 }
+.gifts .trigger {
+  font-size: 1.2rem;
+  color: white;
+  padding-top: 1rem;
+  animation: sc 1s infinite;
+}
+
+@keyframes sc {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 /* akhir gifts */
 /* footer */
 footer {
@@ -544,18 +560,18 @@ footer i {
   }
 }
 /* mobile */
-@media (max-width: 576px) {
+@media (max-width: 480px) {
   body {
     padding-right: 0.1rem !important;
   }
   html {
     font-size: 60%;
   }
-  .hero h1 {
-    font-size: 5.6rem;
+  .hero .nama {
+    font-size: 10px;
   }
   .simply-countdown > .simply-section {
-    padding: 43px;
+    padding: 35px;
     margin: 3px;
     border-color: black;
   }
@@ -580,5 +596,8 @@ footer i {
   }
   .timeline li .timeline-panel::after {
     top: 31px;
+  }
+  .gifts .trigger {
+    display: none;
   }
 }
