@@ -427,6 +427,28 @@ footer i {
 }
 /*  Akhir footer */
 
+/* alert */
+.peringatan p {
+  color: red;
+  font-weight: bold;
+  background-color: yellow;
+  padding: 1rem;
+}
+.peringatan h3 {
+  color: red;
+  font-weight: bold;
+  font-size: 2rem;
+  animation: scal 1s infinite;
+}
+@keyframes scal {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
 /* audio */
 .audio-icon-wrapper {
   width: 7rem;
