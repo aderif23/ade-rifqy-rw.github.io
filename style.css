@@ -1,0 +1,562 @@
+:root {
+  --pink: #f14e95;
+  --bg: rgb(0, 0, 0);
+  --shadow: 0 2px 2px rgba(0, 0, 0, 0.8);
+}
+body {
+  font-size: 1.2rem;
+  font-family: "Work Sans", sans-serif;
+  padding-right: 0.1rem !important;
+}
+/* halaman hero */
+.hero h1,
+.hero p,
+.hero h4 {
+  text-shadow: var(--shadow);
+}
+.hero {
+  min-height: 100vh;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  filter: blur(1px);
+}
+
+.hero h4 {
+  font-size: 1.8rem;
+}
+.hero h1 {
+  font-family: "Courgette", cursive;
+  font-size: 7.5rem;
+  margin-top: 10px;
+}
+.hero p {
+  margin-top: 25px;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.hero a {
+  margin-top: 20px;
+  color: var(--pink);
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+.hero a:hover {
+  color: white;
+  background-color: var(--pink);
+}
+
+/* countdown */
+.simply-countdown > .simply-section {
+  width: 50px;
+  height: 50px;
+  padding: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  margin: 15px;
+  background: var(--pink);
+  border-radius: 37%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+/* akhir halaman hero */
+
+/* navbar */
+.my-navbar {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px);
+}
+.my-navbar .offcanvas {
+  height: 100vh;
+}
+
+.my-navbar .navbar-brand,
+.my-navbar .offcanvas-title {
+  font-family: "Courgette", "cursive";
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.my-navbar .navbar-nav {
+  font-size: 1rem;
+}
+/* akhir navbar */
+
+/* home */
+.home {
+  background-image: url(img/bg--home.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: -4rem;
+  padding-top: 6rem;
+}
+
+.home h2 {
+  font-size: 5rem;
+  font-family: "Courgette", "cursive";
+  color: var(--pink);
+  font-weight: bold;
+}
+
+.home h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.7rem;
+  color: black;
+}
+
+.home p {
+  color: #000000;
+  font-size: 1.2rem;
+}
+
+.home .couple {
+  margin-top: 100px;
+}
+.home .couple h3 {
+  font-size: 1.5rem;
+  font-family: "Courgette";
+  color: var(--pink);
+  font-weight: bold;
+}
+.home .couple img {
+  width: 100%;
+}
+.home .couple p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.home .couple .ortu {
+  font-weight: bold;
+}
+.home .heart {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  left: 50%;
+  transform: translateX(-50%) translateY(65px);
+}
+.home .heart i {
+  margin: auto;
+  color: var(--pink);
+}
+/* akhir home */
+
+/* Info */
+.info {
+  background-color: var(--pink);
+  color: white;
+  padding-top: 7.6rem;
+  padding-bottom: 7rem;
+}
+.info h2 {
+  font-family: "Courgette";
+  font-size: 5rem;
+  font-weight: bold;
+}
+.info .alamat {
+  font-size: 1.2rem;
+}
+.info .description {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.info .card {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  color: black !important;
+  border: 3px solid white;
+}
+.card .card-header {
+  border-bottom: 3px solid white;
+  font-family: "Courgette";
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+.card .card-body {
+  border-bottom: 3px solid white;
+  font-size: 1rem;
+}
+.card .card-footer {
+  font-size: 0.8rem;
+  color: black !important;
+}
+/* Akhir Info */
+
+/* story */
+.story {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+  overflow: hidden;
+}
+.story h2 {
+  font-size: 5rem;
+  font-family: "Courgette", "cursive";
+  color: var(--pink);
+  font-weight: bold;
+}
+.story span {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+}
+.story p {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.timeline {
+  list-style: none;
+  position: relative;
+  margin-top: 1rem;
+  padding: 1.4rem 0;
+}
+
+.timeline::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 3px;
+  background-color: var(--pink);
+  left: 50%;
+}
+.timeline li {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.timeline li::before,
+.timeline li::after {
+  content: "";
+  display: table;
+}
+.timeline li::after {
+  clear: both;
+}
+
+.timeline li .timeline-img {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  background-color: #444;
+  left: 50%;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.timeline .timeline-panel {
+  width: 40%;
+  float: left;
+  border: 1.6px solid var(--pink);
+  position: relative;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.timeline li .timeline-panel::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-top: 15px solid transparent;
+  border-left: 15px solid var(--pink);
+  border-right: 0 solid var(--pink);
+  border-bottom: 15px solid transparent;
+  top: 80px;
+  right: -15px;
+}
+.timeline li .timeline-panel::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-top: 14px solid transparent;
+  border-left: 14px solid white;
+  border-right: 0 solid white;
+  border-bottom: 15px solid transparent;
+  top: 81px;
+  right: -12px;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+  float: right;
+}
+.timeline li.timeline-inverted .timeline-panel::before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+.timeline li.timeline-inverted .timeline-panel::after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -13px;
+  right: auto;
+}
+/* akhir story */
+/* gallery */
+.gallery {
+  background-color: var(--pink);
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+.gallery h2,
+.rsvp h2 {
+  font-size: 5rem;
+  font-family: "Courgette", "cursive";
+  color: white;
+  font-weight: bold;
+}
+.gallery span {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+}
+.gallery p,
+.gifts p {
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  color: white;
+}
+/* Akhir gallery */
+/* rsvp */
+.rsvp {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+.rsvp p {
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  color: black;
+}
+
+.rsvp h2 {
+  font-size: 5rem;
+  font-family: "Courgette", "cursive";
+  color: var(--pink);
+  font-weight: bold;
+}
+
+.rsvp form label {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.rsvp button {
+  background-color: var(--pink);
+  color: white;
+  border: 1px solid var(--pink);
+}
+.rsvp button:hover {
+  background-color: white;
+  color: var(--pink);
+  border: 1px solid var(--pink);
+}
+/* Akhir rsvp */
+
+/* gifts */
+.gifts {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+  background-color: var(--pink);
+}
+.gifts h2 {
+  font-size: 5rem;
+  font-family: "Courgette", "cursive";
+  color: white;
+  font-weight: bold;
+}
+.gifts span {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+}
+.gifts .alamatgifts:hover {
+  background-color: white;
+  color: var(--pink);
+  border: 2px solid var(--pink);
+}
+.gifts .alamatgifts {
+  background-color: var(--pink);
+  color: white;
+}
+/* akhir gifts */
+/* footer */
+footer {
+  padding: 2rem;
+  background-color: #fff;
+}
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--pink);
+}
+footer a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: blue;
+}
+footer i {
+  margin-left: 10px;
+  color: var(--pink);
+}
+/*  Akhir footer */
+
+/* audio */
+.audio-icon-wrapper {
+  width: 7rem;
+  height: 7rem;
+  font-size: 3rem;
+  position: fixed;
+  bottom: 0.4rem;
+  right: 1rem;
+  cursor: pointer;
+  color: black;
+  animation: muter 4s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  transform-origin: center;
+}
+@keyframes muter {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* akhir-audio */
+/* mediaQuery */
+
+/* extra Large */
+@media (max-width: 1200px) {
+  .home .heart {
+    transform: translateX(-50%) translateY(45px);
+  }
+}
+/* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 70px;
+  }
+
+  .timeline::before {
+    left: 60px;
+  }
+
+  .timeline li .timeline-img {
+    left: 15px;
+    margin-left: 45px;
+    top: 16px;
+  }
+  .timeline li .timeline-panel {
+    width: calc((100% - 200px));
+    float: right;
+  }
+  .timeline li .timeline-panel::before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+  .timeline li .timeline-panel::after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;
+  }
+}
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 70%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 60px;
+    margin: 5px;
+  }
+  .sticky-top {
+    overflow: hidden;
+  }
+  .my-navbar .navbar-nav {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .home .heart {
+    display: none;
+  }
+
+  .timeline li .timeline-img {
+    width: 140px;
+    height: 140px;
+  }
+}
+/* mobile */
+@media (max-width: 576px) {
+  body {
+    padding-right: 0.1rem !important;
+  }
+  html {
+    font-size: 60%;
+  }
+  .hero h1 {
+    font-size: 5.6rem;
+  }
+  .simply-countdown > .simply-section {
+    padding: 43px;
+    margin: 3px;
+    border-color: black;
+  }
+  .home h2 {
+    font-size: 5rem;
+    margin-top: 1rem;
+  }
+  .home .isi {
+    padding-top: 25px;
+  }
+  .timeline li .timeline-img {
+    width: 100px;
+    height: 100px;
+  }
+  .timeline li .timeline-panel {
+    width: 62%;
+    transform: translateX(-20px);
+  }
+
+  .timeline li .timeline-panel::before {
+    top: 30px;
+  }
+  .timeline li .timeline-panel::after {
+    top: 31px;
+  }
+}
